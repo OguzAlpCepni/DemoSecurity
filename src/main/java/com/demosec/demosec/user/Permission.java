@@ -1,5 +1,6 @@
 package com.demosec.demosec.user;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
@@ -14,5 +15,6 @@ public enum Permission {
     MANAGER_CREATE("management:create"),
     MANAGER_DELETE("management:delete"),
     ;
+    @Getter
     private final String permissionName;
 }

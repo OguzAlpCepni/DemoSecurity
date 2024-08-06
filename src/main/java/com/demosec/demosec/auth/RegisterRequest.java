@@ -1,5 +1,6 @@
 package com.demosec.demosec.auth;
 
+import com.demosec.demosec.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,6 +17,7 @@ public class RegisterRequest {
     private String email;
     private String password;
 
+    private Role role;
 }
 
 

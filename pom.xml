@@ -9,7 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.demoSec</groupId>
-    <artifactId>DemoSecurityy</artifactId>
+
+    <artifactId>DenoSecurity</artifactId>
+
+
     <version>0.0.1-SNAPSHOT</version>
     <name>DemoSecurity</name>
     <description>DemoSecurity</description>

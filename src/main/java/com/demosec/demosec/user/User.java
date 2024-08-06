@@ -22,15 +22,20 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue
     private Integer id;
+
     private String firstname;
     private String lastname;
+
     private String email;
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+
         return role.getAuthorities();
+
+
     // Kullanıcının yetkilerini döndürür kullanıcı rolu sadece simplegrantedauthority olarak döndü
     }
     @Override
@@ -62,6 +67,9 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
+
         return true;
+
+
     }
 }
